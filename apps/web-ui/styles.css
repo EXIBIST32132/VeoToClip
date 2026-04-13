@@ -1,0 +1,83 @@
+:root {
+  --bg: #eef3e5;
+  --panel: rgba(255, 255, 255, 0.72);
+  --ink: #12251d;
+  --muted: #47594f;
+  --line: rgba(18, 37, 29, 0.12);
+  --accent: #0d6a46;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(13, 106, 70, 0.18), transparent 30%),
+    linear-gradient(180deg, #f6f8f0 0%, var(--bg) 100%);
+}
+
+.shell {
+  width: min(1100px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 40px 0 64px;
+}
+
+.hero,
+.grid article,
+.status {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 30px rgba(18, 37, 29, 0.07);
+}
+
+.hero,
+.status {
+  padding: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1,
+h2 {
+  margin: 0 0 12px;
+}
+
+.lede,
+.grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.grid article {
+  padding: 20px;
+}
+
+.status pre {
+  margin: 0;
+  overflow: auto;
+  padding: 16px;
+  border-radius: 14px;
+  background: #0f1c16;
+  color: #ddf4e2;
+}

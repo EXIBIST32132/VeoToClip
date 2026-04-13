@@ -1,0 +1,1 @@
+"""Possession and interaction contracts."""

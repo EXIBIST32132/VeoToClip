@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VeoToClip Review Surface</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Phase 0 Scaffold</p>
+        <h1>VeoToClip</h1>
+        <p class="lede">
+          Local-first football video analysis with inspectable tracking, identity locking,
+          possession segmentation, and clip review.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article>
+          <h2>Upload + Select</h2>
+          <p>Upload match video, choose player by click, box, track list, or jersey hints.</p>
+        </article>
+        <article>
+          <h2>Analyze + Review</h2>
+          <p>Inspect candidate possessions on a timeline with confidence and overlay evidence.</p>
+        </article>
+        <article>
+          <h2>Edit + Export</h2>
+          <p>Trim, merge, split, override identity, and export selected clips or compilation reels.</p>
+        </article>
+      </section>
+
+      <section class="status">
+        <h2>Current status</h2>
+        <pre id="manifest">Loading local scaffold manifest...</pre>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

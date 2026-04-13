@@ -1,0 +1,1 @@
+"""Selected-player identity worker."""
