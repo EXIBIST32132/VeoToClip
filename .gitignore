@@ -12,6 +12,8 @@ dist/
 build/
 .codex/
 .omx/
+FootballVideos/
+*.pt
 artifacts/debug_videos/*
 !artifacts/debug_videos/.gitkeep
 artifacts/metrics/*

@@ -2,9 +2,18 @@
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from typing import Iterable, Protocol
 
 from libs.schemas import BallInteraction, ClipBoundaryRule, PossessionSegment, TrackObservation
+
+
+@dataclass(slots=True)
+class PossessionInferenceInput:
+    """Normalized possession worker input for a single selected player."""
+
+    player_track: list[TrackObservation]
+    ball_track: list[TrackObservation]
 
 
 class PossessionInferenceEngine(Protocol):
